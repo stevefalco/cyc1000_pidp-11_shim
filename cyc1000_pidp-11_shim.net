@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sfalco/kicad/cyc1000_pidp-11_shim/cyc1000_pidp-11_shim.sch)
-    (date "Sat 30 Jan 2021 14:23:33 EST")
+    (date "Sat 30 Jan 2021 14:55:49 EST")
     (tool "Eeschema 5.1.9-1.fc33")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
