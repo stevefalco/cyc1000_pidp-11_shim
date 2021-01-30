@@ -300,42 +300,40 @@ ETH_MISO
 Text Label 2000 4650 0    50   ~ 0
 ETH_SCK
 Wire Wire Line
-	2450 6950 1750 6950
+	2600 8550 1900 8550
 Wire Wire Line
-	2450 7050 1750 7050
+	2600 8650 1900 8650
 Wire Wire Line
-	2450 7150 1750 7150
+	2600 8750 1900 8750
 Wire Wire Line
-	2450 7250 1750 7250
+	2600 8850 1900 8850
 Wire Wire Line
-	2450 7450 1750 7450
-Text Label 2450 6950 2    50   ~ 0
+	2600 9050 1900 9050
+Text Label 2600 8550 2    50   ~ 0
 RTS
-Text Label 2450 7050 2    50   ~ 0
+Text Label 2600 8650 2    50   ~ 0
 CTS
-Text Label 2450 7150 2    50   ~ 0
+Text Label 2600 8750 2    50   ~ 0
 RX1
-Text Label 2450 7250 2    50   ~ 0
+Text Label 2600 8850 2    50   ~ 0
 TX1
-Text Label 2450 7450 2    50   ~ 0
+Text Label 2600 9050 2    50   ~ 0
 VCC33
 $Comp
 L falco_CHAMP:GND #SUPPLY06
 U 1 1 60203B1B
-P 1950 7350
-F 0 "#SUPPLY06" H 1950 7350 45  0001 L BNN
-F 1 "GND" H 1875 7225 45  0000 L BNN
-F 2 "" H 1950 7350 60  0001 C CNN
-F 3 "" H 1950 7350 60  0001 C CNN
-	1    1950 7350
+P 2100 8950
+F 0 "#SUPPLY06" H 2100 8950 45  0001 L BNN
+F 1 "GND" H 2025 8825 45  0000 L BNN
+F 2 "" H 2100 8950 60  0001 C CNN
+F 3 "" H 2100 8950 60  0001 C CNN
+	1    2100 8950
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1850 7350 1750 7350
+	2000 8950 1900 8950
 Wire Wire Line
 	7300 1000 7300 1450
-NoConn ~ 7600 1600
-NoConn ~ 7700 1600
 Text Label 7300 1000 3    50   ~ 0
 VCC5
 Wire Wire Line
@@ -351,8 +349,8 @@ Wire Wire Line
 	8850 2600 8300 2600
 Text Label 8850 2600 2    50   ~ 0
 COL2
-Text Notes 1850 6750 0    50   ~ 0
-RTS/CTS are not currently implemented in the FPGA.
+Text Notes 1700 8250 0    50   ~ 0
+RTS/CTS are not currently implemented in the FPGA.\n\nAlso, the default bitsteams currently don't enable\nthis UART at all.  Rather, the console is on the\nCYC1000 USB port by default.\n\nIt is easy to enable the UART in the VHDL, either as\na second port, or as a replacement for the USB\nconsole.\n\nYou can either use a Digilent RS232 PMOD or an\nAdaFruit FTDI-Friend, but you cannot use both\nat the same time.  And of course you can leave\nthem both out if you don't want them.
 Wire Wire Line
 	6700 2000 6200 2000
 Text Label 6200 2000 0    50   ~ 0
@@ -450,113 +448,113 @@ RESET_N
 $Comp
 L falco_CHAMP:GND #SUPPLY08
 U 1 1 602A7261
-P 5900 7350
-F 0 "#SUPPLY08" H 5900 7350 45  0001 L BNN
-F 1 "GND" H 5825 7225 45  0000 L BNN
-F 2 "" H 5900 7350 60  0001 C CNN
-F 3 "" H 5900 7350 60  0001 C CNN
-	1    5900 7350
+P 6150 7700
+F 0 "#SUPPLY08" H 6150 7700 45  0001 L BNN
+F 1 "GND" H 6075 7575 45  0000 L BNN
+F 2 "" H 6150 7700 60  0001 C CNN
+F 3 "" H 6150 7700 60  0001 C CNN
+	1    6150 7700
 	0    -1   -1   0   
 $EndComp
 $Comp
 L falco_CHAMP:GND #SUPPLY09
 U 1 1 602A7771
-P 8650 7350
-F 0 "#SUPPLY09" H 8650 7350 45  0001 L BNN
-F 1 "GND" H 8575 7225 45  0000 L BNN
-F 2 "" H 8650 7350 60  0001 C CNN
-F 3 "" H 8650 7350 60  0001 C CNN
-	1    8650 7350
+P 8900 7700
+F 0 "#SUPPLY09" H 8900 7700 45  0001 L BNN
+F 1 "GND" H 8825 7575 45  0000 L BNN
+F 2 "" H 8900 7700 60  0001 C CNN
+F 3 "" H 8900 7700 60  0001 C CNN
+	1    8900 7700
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5800 7350 5700 7350
+	6050 7700 5950 7700
 Wire Wire Line
-	8550 7350 8450 7350
+	8800 7700 8700 7700
 Wire Wire Line
-	6400 7450 5950 7450
-Text Label 6400 7450 2    50   ~ 0
+	6650 7800 6200 7800
+Text Label 6650 7800 2    50   ~ 0
 VCC33
 Wire Wire Line
-	9150 7450 8450 7450
-Text Label 9150 7450 2    50   ~ 0
+	9400 7800 8700 7800
+Text Label 9400 7800 2    50   ~ 0
 VCC33
 Wire Wire Line
-	6400 7250 5700 7250
+	6650 7600 5950 7600
 Wire Wire Line
-	6400 7150 5700 7150
+	6650 7500 5950 7500
 Wire Wire Line
-	6400 7050 5700 7050
+	6650 7400 5950 7400
 Wire Wire Line
-	6400 6950 5700 6950
+	6650 7300 5950 7300
 Wire Wire Line
-	9150 7250 8450 7250
+	9400 7600 8700 7600
 Wire Wire Line
-	9150 7150 8450 7150
+	9400 7500 8700 7500
 Wire Wire Line
-	9150 7050 8450 7050
+	9400 7400 8700 7400
 Wire Wire Line
-	9150 6950 8450 6950
-Text Label 6400 7250 2    50   ~ 0
+	9400 7300 8700 7300
+Text Label 6650 7600 2    50   ~ 0
 USD_SCK
-Text Label 6400 7150 2    50   ~ 0
+Text Label 6650 7500 2    50   ~ 0
 USD_MISO
-Text Label 6400 7050 2    50   ~ 0
+Text Label 6650 7400 2    50   ~ 0
 USD_MOSI
-Text Label 6400 6950 2    50   ~ 0
+Text Label 6650 7300 2    50   ~ 0
 USD_CS
-Text Label 9150 7250 2    50   ~ 0
+Text Label 9400 7600 2    50   ~ 0
 ETH_SCK
-Text Label 9150 7150 2    50   ~ 0
+Text Label 9400 7500 2    50   ~ 0
 ETH_MISO
-Text Label 9150 7050 2    50   ~ 0
+Text Label 9400 7400 2    50   ~ 0
 ETH_MOSI
-Text Label 9150 6950 2    50   ~ 0
+Text Label 9400 7300 2    50   ~ 0
 ETH_SS
-Text Notes 4200 6500 0    50   ~ 0
+Text Notes 4800 6700 0    50   ~ 0
 WARNING: Pin Numbers on the PMOD connectors match the pin\nnumbers assigned by Diglent.  They do NOT match the pin numbers\non Sytse's original shim.\n\nBe careful when connecting PMODs not to get them backwards!\nThe silk screen on this shim should help.
 $Comp
 L Connector_Generic:Conn_01x02 J4
 U 1 1 602E96DD
-P 5700 9100
-F 0 "J4" H 5700 9200 50  0000 C CNN
-F 1 "POWER" H 5700 8900 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5700 9100 50  0001 C CNN
-F 3 "~" H 5700 9100 50  0001 C CNN
-	1    5700 9100
+P 12850 3900
+F 0 "J4" H 12850 4000 50  0000 C CNN
+F 1 "EXTERNAL 5.0V POWER" H 13400 3850 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 12850 3900 50  0001 C CNN
+F 3 "~" H 12850 3900 50  0001 C CNN
+	1    12850 3900
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 603058F3
-P 6500 9650
-F 0 "#FLG0101" H 6500 9725 50  0001 C CNN
-F 1 "PWR_FLAG" H 6500 9800 50  0000 C CNN
-F 2 "" H 6500 9650 50  0001 C CNN
-F 3 "~" H 6500 9650 50  0001 C CNN
-	1    6500 9650
+P 13650 4450
+F 0 "#FLG0101" H 13650 4525 50  0001 C CNN
+F 1 "PWR_FLAG" H 13650 4600 50  0000 C CNN
+F 2 "" H 13650 4450 50  0001 C CNN
+F 3 "~" H 13650 4450 50  0001 C CNN
+	1    13650 4450
 	-1   0    0    1   
 $EndComp
 $Comp
 L falco_CHAMP:GND #SUPPLY0101
 U 1 1 60306F31
-P 6150 9700
-F 0 "#SUPPLY0101" H 6150 9700 45  0001 L BNN
-F 1 "GND" H 6075 9575 45  0000 L BNN
-F 2 "" H 6150 9700 60  0001 C CNN
-F 3 "" H 6150 9700 60  0001 C CNN
-	1    6150 9700
+P 13300 4500
+F 0 "#SUPPLY0101" H 13300 4500 45  0001 L BNN
+F 1 "GND" H 13225 4375 45  0000 L BNN
+F 2 "" H 13300 4500 60  0001 C CNN
+F 3 "" H 13300 4500 60  0001 C CNN
+	1    13300 4500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 60312A96
-P 6500 8800
-F 0 "#FLG0103" H 6500 8875 50  0001 C CNN
-F 1 "PWR_FLAG" H 6500 8950 50  0000 C CNN
-F 2 "" H 6500 8800 50  0001 C CNN
-F 3 "~" H 6500 8800 50  0001 C CNN
-	1    6500 8800
+P 13650 3600
+F 0 "#FLG0103" H 13650 3675 50  0001 C CNN
+F 1 "PWR_FLAG" H 13650 3750 50  0000 C CNN
+F 2 "" H 13650 3600 50  0001 C CNN
+F 3 "~" H 13650 3600 50  0001 C CNN
+	1    13650 3600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -573,312 +571,281 @@ $EndComp
 $Comp
 L Device:CP1 C1
 U 1 1 60369449
-P 6500 9250
-F 0 "C1" H 6525 9350 50  0000 L CNN
-F 1 "270u" H 6525 9150 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 6500 9250 50  0001 C CNN
-F 3 "~" H 6500 9250 50  0001 C CNN
-	1    6500 9250
+P 13650 4050
+F 0 "C1" H 13675 4150 50  0000 L CNN
+F 1 "270u" H 13675 3950 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 13650 4050 50  0001 C CNN
+F 3 "~" H 13650 4050 50  0001 C CNN
+	1    13650 4050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6150 9550 6500 9550
-Connection ~ 6150 9550
+	13300 4350 13650 4350
+Connection ~ 13300 4350
 Wire Wire Line
-	6150 9550 6150 9600
+	13300 4350 13300 4400
 Wire Wire Line
-	6500 9400 6500 9550
-Connection ~ 6500 9550
+	13650 4200 13650 4350
+Connection ~ 13650 4350
 Wire Wire Line
-	6500 9100 6500 8900
-Connection ~ 6500 8900
+	13650 3900 13650 3700
+Connection ~ 13650 3700
 $Comp
 L Device:C C2
 U 1 1 6038563C
-P 6900 9250
-F 0 "C2" H 6925 9350 50  0000 L CNN
-F 1 "0.1" H 6925 9150 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 6938 9100 50  0001 C CNN
-F 3 "~" H 6900 9250 50  0001 C CNN
-	1    6900 9250
+P 14050 4050
+F 0 "C2" H 14075 4150 50  0000 L CNN
+F 1 "0.1u" H 14075 3950 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 14088 3900 50  0001 C CNN
+F 3 "~" H 14050 4050 50  0001 C CNN
+	1    14050 4050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6900 9550 6900 9400
+	14050 4350 14050 4200
 Wire Wire Line
-	6900 8900 6900 9100
+	14050 3700 14050 3900
 $Comp
 L Connector_Generic:Conn_02x06_Top_Bottom J13
 U 1 1 6013BD2C
-P 5500 7150
-F 0 "J13" H 5550 7450 50  0000 C CNN
-F 1 "USD_PMOD" H 5550 6750 50  0000 C CNN
-F 2 "falco_digilent:uSD-2x6" H 5500 7150 50  0001 C CNN
-F 3 "~" H 5500 7150 50  0001 C CNN
-	1    5500 7150
+P 5750 7500
+F 0 "J13" H 5800 7800 50  0000 C CNN
+F 1 "USD_PMOD" H 5800 7100 50  0000 C CNN
+F 2 "falco_digilent:uSD-2x6" H 5750 7500 50  0001 C CNN
+F 3 "~" H 5750 7500 50  0001 C CNN
+	1    5750 7500
 	-1   0    0    -1  
 $EndComp
 $Comp
 L falco_CHAMP:GND #SUPPLY011
 U 1 1 60176D34
-P 5000 7350
-F 0 "#SUPPLY011" H 5000 7350 45  0001 L BNN
-F 1 "GND" H 4925 7225 45  0000 L BNN
-F 2 "" H 5000 7350 60  0001 C CNN
-F 3 "" H 5000 7350 60  0001 C CNN
-	1    5000 7350
+P 5250 7700
+F 0 "#SUPPLY011" H 5250 7700 45  0001 L BNN
+F 1 "GND" H 5175 7575 45  0000 L BNN
+F 2 "" H 5250 7700 60  0001 C CNN
+F 3 "" H 5250 7700 60  0001 C CNN
+	1    5250 7700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5100 7350 5200 7350
+	5350 7700 5450 7700
 Wire Wire Line
-	4500 7450 5200 7450
-Text Label 4500 7450 0    50   ~ 0
+	4750 7800 5450 7800
+Text Label 4750 7800 0    50   ~ 0
 VCC33
-NoConn ~ 5200 6950
-NoConn ~ 5200 7050
-NoConn ~ 5200 7150
-NoConn ~ 5200 7250
+NoConn ~ 5450 7300
+NoConn ~ 5450 7400
+NoConn ~ 5450 7500
+NoConn ~ 5450 7600
 $Comp
 L Connector_Generic:Conn_01x06 J12
 U 1 1 601E0B5B
-P 1550 7150
-F 0 "J12" H 1550 7450 50  0000 C CNN
-F 1 "RS232_PMOD" H 1550 6750 50  0000 C CNN
-F 2 "falco_digilent:rs232-1x6" H 1550 7150 50  0001 C CNN
-F 3 "~" H 1550 7150 50  0001 C CNN
-	1    1550 7150
+P 1700 8750
+F 0 "J12" H 1700 9050 50  0000 C CNN
+F 1 "RS232_PMOD" H 1700 8350 50  0000 C CNN
+F 2 "falco_digilent:rs232-1x6" H 1700 8750 50  0001 C CNN
+F 3 "~" H 1700 8750 50  0001 C CNN
+	1    1700 8750
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x06_Top_Bottom J14
 U 1 1 601E8F6E
-P 8250 7150
-F 0 "J14" H 8300 7450 50  0000 C CNN
-F 1 "ETH_PMOD" H 8300 6750 50  0000 C CNN
-F 2 "falco_digilent:ethernet-2x6" H 8250 7150 50  0001 C CNN
-F 3 "~" H 8250 7150 50  0001 C CNN
-	1    8250 7150
+P 8500 7500
+F 0 "J14" H 8550 7800 50  0000 C CNN
+F 1 "ETH_PMOD" H 8550 7100 50  0000 C CNN
+F 2 "falco_digilent:ethernet-2x6" H 8500 7500 50  0001 C CNN
+F 3 "~" H 8500 7500 50  0001 C CNN
+	1    8500 7500
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R_US R1
 U 1 1 601EA0E3
-P 7250 7200
-F 0 "R1" V 7350 7200 50  0000 C CNN
-F 1 "100k" V 7150 7200 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7290 7190 50  0001 C CNN
-F 3 "~" H 7250 7200 50  0001 C CNN
-	1    7250 7200
+P 7500 7550
+F 0 "R1" V 7600 7550 50  0000 C CNN
+F 1 "100k" V 7400 7550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7540 7540 50  0001 C CNN
+F 3 "~" H 7500 7550 50  0001 C CNN
+	1    7500 7550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7250 7050 7250 6950
+	7500 7400 7500 7300
 Wire Wire Line
-	7250 6950 7950 6950
+	7500 7300 8200 7300
 Wire Wire Line
-	7250 7350 7250 7450
+	7500 7700 7500 7800
 Wire Wire Line
-	7250 7450 7950 7450
-NoConn ~ 7950 7050
-NoConn ~ 7950 7150
-NoConn ~ 7950 7250
-Text Notes 7500 8150 0    50   ~ 0
-100k pull-up resistor is required by Microchip.\nSee ENC424J600 datasheet figure 2-9.\n\nThe module seems to work even without the\nresistor, so you can probably leave it out if\nyou prefer.
-Wire Notes Line
-	1000 5850 9500 5850
-Wire Notes Line
-	9500 5850 9500 8350
-Wire Notes Line
-	9500 8350 1000 8350
-Wire Notes Line
-	1000 8350 1000 5850
+	7500 7800 8200 7800
+NoConn ~ 8200 7400
+NoConn ~ 8200 7500
+NoConn ~ 8200 7600
+Text Notes 7900 8600 0    50   ~ 0
+R1 is required according to Microchip.\nSee the ENC424J600 datasheet, figure 2-9.\n\nI don't know why Digilent doesn't include\nthat resistor on their module.  They seem\nto get away with leaving it out, but I am\nmore comfortable including it.
 $Comp
 L falco_CHAMP:GND #SUPPLY0102
 U 1 1 602B51F2
-P 7800 7350
-F 0 "#SUPPLY0102" H 7800 7350 45  0001 L BNN
-F 1 "GND" H 7725 7225 45  0000 L BNN
-F 2 "" H 7800 7350 60  0001 C CNN
-F 3 "" H 7800 7350 60  0001 C CNN
-	1    7800 7350
+P 8050 7700
+F 0 "#SUPPLY0102" H 8050 7700 45  0001 L BNN
+F 1 "GND" H 7975 7575 45  0000 L BNN
+F 2 "" H 8050 7700 60  0001 C CNN
+F 3 "" H 8050 7700 60  0001 C CNN
+	1    8050 7700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7900 7350 7950 7350
-Text Label 7350 7450 0    50   ~ 0
+	8150 7700 8200 7700
+Text Label 7600 7800 0    50   ~ 0
 VCC33
-Text Label 7800 6950 0    50   ~ 0
+Text Label 8050 7300 0    50   ~ 0
 INT
 $Comp
 L Connector_Generic:Conn_01x06 J1
 U 1 1 60308C0B
-P 3000 7150
-F 0 "J1" H 3000 7450 50  0000 C CNN
-F 1 "FTDI_FRIEND" H 3000 6750 50  0000 C CNN
-F 2 "falco_adafruit:ftdi-friend-1x6" H 3000 7150 50  0001 C CNN
-F 3 "~" H 3000 7150 50  0001 C CNN
-	1    3000 7150
+P 3150 8750
+F 0 "J1" H 3150 9050 50  0000 C CNN
+F 1 "FTDI_FRIEND" H 3150 8350 50  0000 C CNN
+F 2 "falco_adafruit:ftdi-friend-1x6" H 3150 8750 50  0001 C CNN
+F 3 "~" H 3150 8750 50  0001 C CNN
+	1    3150 8750
 	-1   0    0    -1  
 $EndComp
 $Comp
 L falco_CHAMP:GND #SUPPLY07
 U 1 1 603099B7
-P 3400 6950
-F 0 "#SUPPLY07" H 3400 6950 45  0001 L BNN
-F 1 "GND" H 3325 6825 45  0000 L BNN
-F 2 "" H 3400 6950 60  0001 C CNN
-F 3 "" H 3400 6950 60  0001 C CNN
-	1    3400 6950
+P 3550 8550
+F 0 "#SUPPLY07" H 3550 8550 45  0001 L BNN
+F 1 "GND" H 3475 8425 45  0000 L BNN
+F 2 "" H 3550 8550 60  0001 C CNN
+F 3 "" H 3550 8550 60  0001 C CNN
+	1    3550 8550
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3200 6950 3300 6950
+	3350 8550 3450 8550
 Wire Wire Line
-	3200 7350 3950 7350
-Text Label 3950 7350 2    50   ~ 0
+	3350 8950 4100 8950
+Text Label 4100 8950 2    50   ~ 0
 TX1
 Wire Wire Line
-	3950 7250 3200 7250
+	4100 8850 3350 8850
 Wire Wire Line
-	3950 7050 3200 7050
+	4100 8650 3350 8650
 Wire Wire Line
-	3950 7450 3200 7450
-Text Label 3950 7250 2    50   ~ 0
+	4100 9050 3350 9050
+Text Label 4100 8850 2    50   ~ 0
 RX1
-NoConn ~ 3200 7150
-Text Label 3950 7050 2    50   ~ 0
+NoConn ~ 3350 8750
+Text Label 4100 8650 2    50   ~ 0
 RTS
-Text Label 3950 7450 2    50   ~ 0
+Text Label 4100 9050 2    50   ~ 0
 CTS
-Text Notes 1450 7900 0    50   ~ 0
-You can either use a Digilent RS232 PMOD or an\nAdaFruit FTDI-Friend, but not both at the same\ntime.
 $Comp
 L Device:C C3
 U 1 1 60184414
-P 5950 7800
-F 0 "C3" H 5975 7900 50  0000 L CNN
-F 1 "10u" H 5975 7700 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5988 7650 50  0001 C CNN
-F 3 "~" H 5950 7800 50  0001 C CNN
-	1    5950 7800
+P 6200 8150
+F 0 "C3" H 6225 8250 50  0000 L CNN
+F 1 "0.1u" H 6225 8050 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 6238 8000 50  0001 C CNN
+F 3 "~" H 6200 8150 50  0001 C CNN
+	1    6200 8150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C6
+L Device:C C4
 U 1 1 60184AB7
-P 7250 7800
-F 0 "C6" H 7275 7900 50  0000 L CNN
-F 1 "10u" H 7275 7700 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 7288 7650 50  0001 C CNN
-F 3 "~" H 7250 7800 50  0001 C CNN
-	1    7250 7800
+P 7500 8150
+F 0 "C4" H 7525 8250 50  0000 L CNN
+F 1 "0.1u" H 7525 8050 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 7538 8000 50  0001 C CNN
+F 3 "~" H 7500 8150 50  0001 C CNN
+	1    7500 8150
 	1    0    0    -1  
 $EndComp
 $Comp
 L falco_CHAMP:GND #SUPPLY0103
 U 1 1 601A3D08
-P 5950 8150
-F 0 "#SUPPLY0103" H 5950 8150 45  0001 L BNN
-F 1 "GND" H 5875 8025 45  0000 L BNN
-F 2 "" H 5950 8150 60  0001 C CNN
-F 3 "" H 5950 8150 60  0001 C CNN
-	1    5950 8150
+P 6200 8500
+F 0 "#SUPPLY0103" H 6200 8500 45  0001 L BNN
+F 1 "GND" H 6125 8375 45  0000 L BNN
+F 2 "" H 6200 8500 60  0001 C CNN
+F 3 "" H 6200 8500 60  0001 C CNN
+	1    6200 8500
 	1    0    0    -1  
 $EndComp
 $Comp
 L falco_CHAMP:GND #SUPPLY0104
 U 1 1 601A4791
-P 7250 8150
-F 0 "#SUPPLY0104" H 7250 8150 45  0001 L BNN
-F 1 "GND" H 7175 8025 45  0000 L BNN
-F 2 "" H 7250 8150 60  0001 C CNN
-F 3 "" H 7250 8150 60  0001 C CNN
-	1    7250 8150
+P 7500 8500
+F 0 "#SUPPLY0104" H 7500 8500 45  0001 L BNN
+F 1 "GND" H 7425 8375 45  0000 L BNN
+F 2 "" H 7500 8500 60  0001 C CNN
+F 3 "" H 7500 8500 60  0001 C CNN
+	1    7500 8500
 	1    0    0    -1  
 $EndComp
+Connection ~ 6200 7800
 Wire Wire Line
-	7250 7950 7250 8000
+	6200 7800 5950 7800
+Connection ~ 7500 7800
 Wire Wire Line
-	5950 7950 5950 8000
-Connection ~ 5950 7450
+	13650 3700 14050 3700
 Wire Wire Line
-	5950 7450 5700 7450
-Connection ~ 7250 7450
+	13650 4350 14050 4350
 Wire Wire Line
-	5950 7450 5950 7600
+	13050 3900 13300 3900
 Wire Wire Line
-	7250 7450 7250 7600
+	13300 3900 13300 3700
 Wire Wire Line
-	6500 8900 6900 8900
+	13050 4000 13300 4000
 Wire Wire Line
-	6500 9550 6900 9550
-Wire Wire Line
-	5900 9100 6150 9100
-Wire Wire Line
-	6150 9100 6150 8900
-Wire Wire Line
-	5900 9200 6150 9200
-Wire Wire Line
-	6150 9200 6150 9550
-Text Label 6150 8900 0    50   ~ 0
+	13300 4000 13300 4350
+Text Label 13300 3700 0    50   ~ 0
 VIN
 Wire Wire Line
-	6500 8800 6500 8900
+	13650 3600 13650 3700
 Wire Wire Line
-	6150 8900 6500 8900
+	13300 3700 13650 3700
 Wire Wire Line
-	6500 9550 6500 9650
-Text Notes 5700 8500 0    50   ~ 0
-All capacitors are optional, but recommended.
-$Comp
-L Device:C C4
-U 1 1 601FB779
-P 6300 7800
-F 0 "C4" H 6325 7900 50  0000 L CNN
-F 1 "0.1" H 6325 7700 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 6338 7650 50  0001 C CNN
-F 3 "~" H 6300 7800 50  0001 C CNN
-	1    6300 7800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C5
-U 1 1 601FC459
-P 6900 7800
-F 0 "C5" H 6925 7900 50  0000 L CNN
-F 1 "0.1" H 6925 7700 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 6938 7650 50  0001 C CNN
-F 3 "~" H 6900 7800 50  0001 C CNN
-	1    6900 7800
-	1    0    0    -1  
-$EndComp
+	13650 4350 13650 4450
+Text Notes 6450 8200 0    50   ~ 0
+C3 and C4 are optional,\nbut recommended.
 Wire Wire Line
-	5950 8000 6300 8000
+	7600 1000 7600 1450
 Wire Wire Line
-	6300 8000 6300 7950
-Connection ~ 5950 8000
+	7600 1450 7700 1450
 Wire Wire Line
-	5950 8000 5950 8050
+	7700 1450 7700 1600
+Connection ~ 7600 1450
 Wire Wire Line
-	6300 7650 6300 7600
+	7600 1450 7600 1600
+Text Label 7600 1000 3    50   ~ 0
+VCC33
+Wire Notes Line
+	1000 5800 10800 5800
+Wire Notes Line
+	10800 5800 10800 9650
+Wire Notes Line
+	10800 9650 1000 9650
+Wire Notes Line
+	1000 9650 1000 5800
+Text Notes 12050 3250 0    50   ~ 0
+You can power the CYC1000 and PiDP-11 using the USB\njack on the CYC1000, or you can use an external supply\nconnected to J4.  You can even do both, because the\nCYC1000 automatically chooses between them without\nany problems.\n\nI prefer to use a separate 5 volt supply, because my\ndesktop PC shuts off its USB ports during a reboot,\nwhich would crash the CYC1000.\n\nI use a specially modified USB cable, with the red +5V\nwire cut, so I can power down the CYC1000 without\nhaving to unplug the USB cable from my PC.\n\nIf you are exclusively using the USB jack for power,\nyou can leave out C1 and C2.\n\nIf you are using a separate supply, then I recommend\ninstalling C1 and C2.  The 270 uF value is not critical;\nit is just what I had on hand in my junk box.  Any\nreasonable value would be fine.
+Wire Notes Line
+	14800 4850 14800 1400
+Wire Notes Line
+	14800 1400 11550 1400
+Wire Notes Line
+	11550 1400 11550 4850
+Wire Notes Line
+	11550 4850 14800 4850
 Wire Wire Line
-	6300 7600 5950 7600
-Connection ~ 5950 7600
+	6200 7800 6200 8000
 Wire Wire Line
-	5950 7600 5950 7650
+	6200 8300 6200 8400
 Wire Wire Line
-	7250 8000 6900 8000
+	7500 7800 7500 8000
 Wire Wire Line
-	6900 8000 6900 7950
-Connection ~ 7250 8000
-Wire Wire Line
-	7250 8000 7250 8050
-Wire Wire Line
-	6900 7650 6900 7600
-Wire Wire Line
-	6900 7600 7250 7600
-Connection ~ 7250 7600
-Wire Wire Line
-	7250 7600 7250 7650
+	7500 8300 7500 8400
 $EndSCHEMATC
