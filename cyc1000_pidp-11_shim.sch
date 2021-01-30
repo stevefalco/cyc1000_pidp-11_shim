@@ -1,0 +1,954 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLedger 17000 11000
+encoding utf-8
+Sheet 1 1
+Title "PDP2011 Shim for PiDP-11"
+Date "2021-01-28"
+Rev "1"
+Comp "Falco Engineering"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	7100 4200 7100 4400
+Wire Wire Line
+	7800 4400 7800 4200
+Wire Wire Line
+	7700 4200 7700 4400
+Connection ~ 7700 4400
+Wire Wire Line
+	7700 4400 7800 4400
+Wire Wire Line
+	7600 4200 7600 4400
+Connection ~ 7600 4400
+Wire Wire Line
+	7600 4400 7700 4400
+Wire Wire Line
+	7500 4200 7500 4400
+Connection ~ 7500 4400
+Wire Wire Line
+	7500 4400 7600 4400
+Wire Wire Line
+	7100 4400 7200 4400
+Wire Wire Line
+	7400 4200 7400 4400
+Connection ~ 7400 4400
+Wire Wire Line
+	7400 4400 7500 4400
+Wire Wire Line
+	7300 4200 7300 4400
+Connection ~ 7300 4400
+Wire Wire Line
+	7300 4400 7400 4400
+Wire Wire Line
+	7200 4200 7200 4400
+Connection ~ 7200 4400
+Wire Wire Line
+	7200 4400 7300 4400
+$Comp
+L power:GND #PWR01
+U 1 1 6018E00C
+P 7400 4500
+F 0 "#PWR01" H 7400 4250 50  0001 C CNN
+F 1 "GND" H 7400 4350 50  0000 C CNN
+F 2 "" H 7400 4500 50  0001 C CNN
+F 3 "" H 7400 4500 50  0001 C CNN
+	1    7400 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4500 7400 4400
+$Comp
+L falco_CHAMP:GND #SUPPLY01
+U 1 1 60191857
+P 4100 1750
+F 0 "#SUPPLY01" H 4100 1750 45  0001 L BNN
+F 1 "GND" H 4025 1625 45  0000 L BNN
+F 2 "" H 4100 1750 60  0001 C CNN
+F 3 "" H 4100 1750 60  0001 C CNN
+	1    4100 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L falco_CHAMP:GND #SUPPLY02
+U 1 1 60193F33
+P 4100 2750
+F 0 "#SUPPLY02" H 4100 2750 45  0001 L BNN
+F 1 "GND" H 4025 2625 45  0000 L BNN
+F 2 "" H 4100 2750 60  0001 C CNN
+F 3 "" H 4100 2750 60  0001 C CNN
+	1    4100 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L falco_CHAMP:GND #SUPPLY03
+U 1 1 60195540
+P 2600 3450
+F 0 "#SUPPLY03" H 2600 3450 45  0001 L BNN
+F 1 "GND" H 2525 3325 45  0000 L BNN
+F 2 "" H 2600 3450 60  0001 C CNN
+F 3 "" H 2600 3450 60  0001 C CNN
+	1    2600 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L falco_CHAMP:GND #SUPPLY04
+U 1 1 60195FAF
+P 2600 3850
+F 0 "#SUPPLY04" H 2600 3850 45  0001 L BNN
+F 1 "GND" H 2525 3725 45  0000 L BNN
+F 2 "" H 2600 3850 60  0001 C CNN
+F 3 "" H 2600 3850 60  0001 C CNN
+	1    2600 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L falco_CHAMP:GND #SUPPLY05
+U 1 1 601962BA
+P 2600 4550
+F 0 "#SUPPLY05" H 2600 4550 45  0001 L BNN
+F 1 "GND" H 2525 4425 45  0000 L BNN
+F 2 "" H 2600 4550 60  0001 C CNN
+F 3 "" H 2600 4550 60  0001 C CNN
+	1    2600 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 3450 2800 3450
+Wire Wire Line
+	2700 3850 2800 3850
+Wire Wire Line
+	2700 4550 2800 4550
+Wire Wire Line
+	4000 1750 3900 1750
+Wire Wire Line
+	4000 2750 3900 2750
+Wire Wire Line
+	2800 1850 2000 1850
+Text Label 2000 1850 0    50   ~ 0
+XLED0
+Wire Wire Line
+	2000 1950 2800 1950
+Wire Wire Line
+	2000 2050 2800 2050
+Wire Wire Line
+	2000 2150 2800 2150
+Wire Wire Line
+	2000 2250 2800 2250
+Wire Wire Line
+	2000 2350 2800 2350
+Wire Wire Line
+	2000 2450 2800 2450
+Text Label 2000 1950 0    50   ~ 0
+XLED1
+Text Label 2000 2050 0    50   ~ 0
+XLED2
+Text Label 2000 2150 0    50   ~ 0
+XLED3
+Text Label 2000 2250 0    50   ~ 0
+XLED4
+Text Label 2000 2350 0    50   ~ 0
+XLED5
+Wire Wire Line
+	2000 2650 2800 2650
+Wire Wire Line
+	2000 2750 2800 2750
+Wire Wire Line
+	2000 2850 2800 2850
+Wire Wire Line
+	2000 2950 2800 2950
+Wire Wire Line
+	2000 3050 2800 3050
+Wire Wire Line
+	2000 3150 2800 3150
+Text Label 2000 2450 0    50   ~ 0
+CTS
+Text Label 2000 2650 0    50   ~ 0
+ROW0
+Text Label 2000 2750 0    50   ~ 0
+ROW1
+Text Label 2000 2850 0    50   ~ 0
+ROW2
+Text Label 2000 2950 0    50   ~ 0
+COL0
+Text Label 2000 3050 0    50   ~ 0
+COL1
+Text Label 2000 3150 0    50   ~ 0
+COL2
+Wire Wire Line
+	2000 1750 2800 1750
+Wire Wire Line
+	2000 3350 2800 3350
+Wire Wire Line
+	2000 3550 2800 3550
+Wire Wire Line
+	2000 3750 2800 3750
+Wire Wire Line
+	2000 3950 2800 3950
+Wire Wire Line
+	2000 4050 2800 4050
+Wire Wire Line
+	2000 4150 2800 4150
+Wire Wire Line
+	2000 4250 2800 4250
+Text Label 2000 1750 0    50   ~ 0
+RTS
+Text Label 2000 3350 0    50   ~ 0
+RX1
+Text Label 2000 3550 0    50   ~ 0
+TX1
+Wire Wire Line
+	4600 2450 3900 2450
+Wire Wire Line
+	4600 2550 3900 2550
+Wire Wire Line
+	4600 2650 3900 2650
+Wire Wire Line
+	4600 2850 3900 2850
+Wire Wire Line
+	4600 3050 3900 3050
+Wire Wire Line
+	4600 3150 3900 3150
+Wire Wire Line
+	4600 3250 3900 3250
+Wire Wire Line
+	4600 3350 3900 3350
+Wire Wire Line
+	4600 3450 3900 3450
+Wire Wire Line
+	4600 3550 3900 3550
+Wire Wire Line
+	4600 3650 3900 3650
+Wire Wire Line
+	4600 3750 3900 3750
+Wire Wire Line
+	4600 3850 3900 3850
+Text Label 4600 2450 2    50   ~ 0
+VCC5
+Text Label 4600 2550 2    50   ~ 0
+VIN
+Text Label 4600 2650 2    50   ~ 0
+VCC33
+Text Label 4600 2850 2    50   ~ 0
+RESET_N
+Text Label 4600 3050 2    50   ~ 0
+COL11
+Text Label 4600 3150 2    50   ~ 0
+COL10
+Text Label 4600 3250 2    50   ~ 0
+COL9
+Text Label 4600 3350 2    50   ~ 0
+COL8
+Text Label 4600 3450 2    50   ~ 0
+COL7
+Text Label 4600 3550 2    50   ~ 0
+COL6
+Text Label 4600 3650 2    50   ~ 0
+COL5
+Text Label 4600 3750 2    50   ~ 0
+COL4
+Text Label 4600 3850 2    50   ~ 0
+COL3
+$Comp
+L falco_fpga:CYC1000 U1
+U 1 1 60188C53
+P 3300 1750
+F 0 "U1" H 3000 1950 50  0000 C CNN
+F 1 "CYC1000" H 3600 1950 50  0000 C CNN
+F 2 "falco_CYC1000:CYC1000" H 3300 1750 50  0001 C CNN
+F 3 "" H 3300 1750 50  0001 C CNN
+	1    3300 1750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3900 1850
+NoConn ~ 3900 1950
+NoConn ~ 3900 2050
+NoConn ~ 3900 2150
+NoConn ~ 3900 2250
+Wire Wire Line
+	2000 4450 2800 4450
+Wire Wire Line
+	2000 4650 2800 4650
+Wire Wire Line
+	2000 4750 2800 4750
+Wire Wire Line
+	2000 4850 2800 4850
+Wire Wire Line
+	2000 4950 2800 4950
+Text Label 2000 3750 0    50   ~ 0
+VCC33
+Text Label 2000 4450 0    50   ~ 0
+VCC33
+Text Label 2000 4250 0    50   ~ 0
+USD_CS
+Text Label 2000 4150 0    50   ~ 0
+USD_MOSI
+Text Label 2000 4050 0    50   ~ 0
+USD_MISO
+Text Label 2000 3950 0    50   ~ 0
+USD_SCK
+Text Label 2000 4950 0    50   ~ 0
+ETH_SS
+Text Label 2000 4850 0    50   ~ 0
+ETH_MOSI
+Text Label 2000 4750 0    50   ~ 0
+ETH_MISO
+Text Label 2000 4650 0    50   ~ 0
+ETH_SCK
+Wire Wire Line
+	2450 6950 1750 6950
+Wire Wire Line
+	2450 7050 1750 7050
+Wire Wire Line
+	2450 7150 1750 7150
+Wire Wire Line
+	2450 7250 1750 7250
+Wire Wire Line
+	2450 7450 1750 7450
+Text Label 2450 6950 2    50   ~ 0
+RTS
+Text Label 2450 7050 2    50   ~ 0
+CTS
+Text Label 2450 7150 2    50   ~ 0
+RX1
+Text Label 2450 7250 2    50   ~ 0
+TX1
+Text Label 2450 7450 2    50   ~ 0
+VCC33
+$Comp
+L falco_CHAMP:GND #SUPPLY06
+U 1 1 60203B1B
+P 1950 7350
+F 0 "#SUPPLY06" H 1950 7350 45  0001 L BNN
+F 1 "GND" H 1875 7225 45  0000 L BNN
+F 2 "" H 1950 7350 60  0001 C CNN
+F 3 "" H 1950 7350 60  0001 C CNN
+	1    1950 7350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1850 7350 1750 7350
+Wire Wire Line
+	7300 1000 7300 1450
+NoConn ~ 7600 1600
+NoConn ~ 7700 1600
+Text Label 7300 1000 3    50   ~ 0
+VCC5
+Wire Wire Line
+	7400 1600 7400 1450
+Wire Wire Line
+	7400 1450 7300 1450
+Connection ~ 7300 1450
+Wire Wire Line
+	7300 1450 7300 1600
+NoConn ~ 8300 2300
+NoConn ~ 8300 2400
+Wire Wire Line
+	8850 2600 8300 2600
+Text Label 8850 2600 2    50   ~ 0
+COL2
+Text Notes 1950 6750 0    50   ~ 0
+RTS/CTS not currently implemented in FPGA.
+Wire Wire Line
+	6700 2000 6200 2000
+Text Label 6200 2000 0    50   ~ 0
+TX1
+Wire Wire Line
+	6200 2100 6700 2100
+Wire Wire Line
+	6200 2300 6700 2300
+Wire Wire Line
+	6200 2400 6700 2400
+Wire Wire Line
+	6200 2500 6700 2500
+Wire Wire Line
+	6200 2700 6700 2700
+Wire Wire Line
+	6200 2800 6700 2800
+Wire Wire Line
+	6200 2900 6700 2900
+Wire Wire Line
+	6200 3100 6700 3100
+Wire Wire Line
+	6200 3200 6700 3200
+Wire Wire Line
+	6200 3300 6700 3300
+Wire Wire Line
+	6200 3400 6700 3400
+Wire Wire Line
+	6200 3500 6700 3500
+Wire Wire Line
+	6200 3600 6700 3600
+Text Label 6200 2100 0    50   ~ 0
+RX1
+Text Label 6200 2400 0    50   ~ 0
+ROW1
+Text Label 6200 2500 0    50   ~ 0
+ROW2
+Wire Wire Line
+	8850 3700 8300 3700
+Wire Wire Line
+	8850 3600 8300 3600
+Wire Wire Line
+	8850 3400 8300 3400
+Wire Wire Line
+	8850 3300 8300 3300
+Wire Wire Line
+	8850 3200 8300 3200
+Wire Wire Line
+	8850 3100 8300 3100
+Wire Wire Line
+	8850 3000 8300 3000
+Wire Wire Line
+	8850 2800 8300 2800
+Wire Wire Line
+	8850 2700 8300 2700
+Text Label 6200 3600 0    50   ~ 0
+COL1
+Text Label 6200 3100 0    50   ~ 0
+XLED2
+Text Label 6200 3200 0    50   ~ 0
+XLED3
+Text Label 6200 3300 0    50   ~ 0
+XLED4
+Text Label 8850 3300 2    50   ~ 0
+COL8
+Text Label 8850 3200 2    50   ~ 0
+COL7
+Text Label 6200 3400 0    50   ~ 0
+XLED5
+Text Label 8850 3400 2    50   ~ 0
+COL9
+Text Label 8850 3100 2    50   ~ 0
+COL6
+Text Label 8850 3000 2    50   ~ 0
+COL5
+NoConn ~ 8300 2000
+NoConn ~ 8300 2100
+Text Label 8850 2700 2    50   ~ 0
+COL3
+Text Label 8850 2800 2    50   ~ 0
+COL4
+Text Label 8850 3600 2    50   ~ 0
+COL10
+Text Label 8850 3700 2    50   ~ 0
+COL11
+Text Label 6200 2300 0    50   ~ 0
+ROW0
+Text Label 6200 3500 0    50   ~ 0
+COL0
+Text Label 6200 2800 0    50   ~ 0
+XLED0
+Text Label 6200 2900 0    50   ~ 0
+XLED1
+Text Label 6200 2700 0    50   ~ 0
+RESET_N
+$Comp
+L falco_CHAMP:GND #SUPPLY08
+U 1 1 602A7261
+P 5900 7350
+F 0 "#SUPPLY08" H 5900 7350 45  0001 L BNN
+F 1 "GND" H 5825 7225 45  0000 L BNN
+F 2 "" H 5900 7350 60  0001 C CNN
+F 3 "" H 5900 7350 60  0001 C CNN
+	1    5900 7350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L falco_CHAMP:GND #SUPPLY09
+U 1 1 602A7771
+P 8650 7350
+F 0 "#SUPPLY09" H 8650 7350 45  0001 L BNN
+F 1 "GND" H 8575 7225 45  0000 L BNN
+F 2 "" H 8650 7350 60  0001 C CNN
+F 3 "" H 8650 7350 60  0001 C CNN
+	1    8650 7350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 7350 5700 7350
+Wire Wire Line
+	8550 7350 8450 7350
+Wire Wire Line
+	6400 7450 5950 7450
+Text Label 6400 7450 2    50   ~ 0
+VCC33
+Wire Wire Line
+	9150 7450 8450 7450
+Text Label 9150 7450 2    50   ~ 0
+VCC33
+Wire Wire Line
+	6400 7250 5700 7250
+Wire Wire Line
+	6400 7150 5700 7150
+Wire Wire Line
+	6400 7050 5700 7050
+Wire Wire Line
+	6400 6950 5700 6950
+Wire Wire Line
+	9150 7250 8450 7250
+Wire Wire Line
+	9150 7150 8450 7150
+Wire Wire Line
+	9150 7050 8450 7050
+Wire Wire Line
+	9150 6950 8450 6950
+Text Label 6400 7250 2    50   ~ 0
+USD_SCK
+Text Label 6400 7150 2    50   ~ 0
+USD_MISO
+Text Label 6400 7050 2    50   ~ 0
+USD_MOSI
+Text Label 6400 6950 2    50   ~ 0
+USD_CS
+Text Label 9150 7250 2    50   ~ 0
+ETH_SCK
+Text Label 9150 7150 2    50   ~ 0
+ETH_MISO
+Text Label 9150 7050 2    50   ~ 0
+ETH_MOSI
+Text Label 9150 6950 2    50   ~ 0
+ETH_SS
+Text Notes 4200 6500 0    50   ~ 0
+WARNING: Pin Numbers on the PMOD connectors match the pin\nnumbers assigned by Diglent.  They do NOT match the pin numbers\non Sytse's original shim.\n\nBe careful when connecting PMODs not to get them backwards!\nThe silk screen on this shim should help.
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 602E96DD
+P 2650 9200
+F 0 "J4" H 2650 9300 50  0000 C CNN
+F 1 "POWER" H 2650 9000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2650 9200 50  0001 C CNN
+F 3 "~" H 2650 9200 50  0001 C CNN
+	1    2650 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L falco_CHAMP:GND #SUPPLY010
+U 1 1 602E9A2D
+P 2350 9450
+F 0 "#SUPPLY010" H 2350 9450 45  0001 L BNN
+F 1 "GND" H 2275 9325 45  0000 L BNN
+F 2 "" H 2350 9450 60  0001 C CNN
+F 3 "" H 2350 9450 60  0001 C CNN
+	1    2350 9450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 9300 2450 9300
+Wire Wire Line
+	2450 9200 2250 9200
+Text Label 2250 9200 0    50   ~ 0
+VIN
+Wire Wire Line
+	2350 9350 2350 9300
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 603058F3
+P 3400 9600
+F 0 "#FLG0101" H 3400 9675 50  0001 C CNN
+F 1 "PWR_FLAG" H 3400 9750 50  0000 C CNN
+F 2 "" H 3400 9600 50  0001 C CNN
+F 3 "~" H 3400 9600 50  0001 C CNN
+	1    3400 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L falco_CHAMP:GND #SUPPLY0101
+U 1 1 60306F31
+P 3400 9800
+F 0 "#SUPPLY0101" H 3400 9800 45  0001 L BNN
+F 1 "GND" H 3325 9675 45  0000 L BNN
+F 2 "" H 3400 9800 60  0001 C CNN
+F 3 "" H 3400 9800 60  0001 C CNN
+	1    3400 9800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 9600 3400 9650
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 60312A96
+P 3400 9100
+F 0 "#FLG0103" H 3400 9175 50  0001 C CNN
+F 1 "PWR_FLAG" H 3400 9250 50  0000 C CNN
+F 2 "" H 3400 9100 50  0001 C CNN
+F 3 "~" H 3400 9100 50  0001 C CNN
+	1    3400 9100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 9100 3400 9000
+Text Label 3400 8750 3    50   ~ 0
+VIN
+$Comp
+L falco_pi:Raspberry_Hat J11
+U 1 1 6033DD3C
+P 7500 2900
+F 0 "J11" H 6800 4150 50  0000 L BNN
+F 1 "Raspberry_Hat" H 7900 1650 50  0000 L TNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 7500 2900 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 7500 2900 50  0001 C CNN
+	1    7500 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C1
+U 1 1 60369449
+P 3950 9350
+F 0 "C1" H 3975 9450 50  0000 L CNN
+F 1 "270u" H 3975 9250 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 3950 9350 50  0001 C CNN
+F 3 "~" H 3950 9350 50  0001 C CNN
+	1    3950 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C2
+U 1 1 603697AC
+P 4350 9350
+F 0 "C2" H 4375 9450 50  0000 L CNN
+F 1 "270u" H 4375 9250 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 4350 9350 50  0001 C CNN
+F 3 "~" H 4350 9350 50  0001 C CNN
+	1    4350 9350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 9650 3950 9650
+Wire Wire Line
+	4350 9650 4350 9500
+Connection ~ 3400 9650
+Wire Wire Line
+	3400 9650 3400 9700
+Wire Wire Line
+	3950 9500 3950 9650
+Connection ~ 3950 9650
+Wire Wire Line
+	3950 9650 4350 9650
+Wire Wire Line
+	3950 9200 3950 9000
+Wire Wire Line
+	3950 9000 3400 9000
+Connection ~ 3400 9000
+Wire Wire Line
+	3400 9000 3400 8750
+Wire Wire Line
+	4350 9200 4350 9000
+Wire Wire Line
+	4350 9000 3950 9000
+Connection ~ 3950 9000
+$Comp
+L Device:C C3
+U 1 1 60385373
+P 4700 9350
+F 0 "C3" H 4725 9450 50  0000 L CNN
+F 1 "0.1" H 4725 9250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4738 9200 50  0001 C CNN
+F 3 "~" H 4700 9350 50  0001 C CNN
+	1    4700 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 6038563C
+P 5000 9350
+F 0 "C4" H 5025 9450 50  0000 L CNN
+F 1 "0.1" H 5025 9250 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5038 9200 50  0001 C CNN
+F 3 "~" H 5000 9350 50  0001 C CNN
+	1    5000 9350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 9650 4700 9650
+Wire Wire Line
+	5000 9650 5000 9500
+Connection ~ 4350 9650
+Wire Wire Line
+	4700 9500 4700 9650
+Connection ~ 4700 9650
+Wire Wire Line
+	4700 9650 5000 9650
+Wire Wire Line
+	4350 9000 4700 9000
+Wire Wire Line
+	5000 9000 5000 9200
+Connection ~ 4350 9000
+Wire Wire Line
+	4700 9200 4700 9000
+Connection ~ 4700 9000
+Wire Wire Line
+	4700 9000 5000 9000
+Text Notes 4700 8650 0    50   ~ 0
+All capacitors are optional.
+$Comp
+L Connector_Generic:Conn_02x06_Top_Bottom J13
+U 1 1 6013BD2C
+P 5500 7150
+F 0 "J13" H 5550 7450 50  0000 C CNN
+F 1 "USD_PMOD" H 5550 6750 50  0000 C CNN
+F 2 "falco_digilent:uSD-2x6" H 5500 7150 50  0001 C CNN
+F 3 "~" H 5500 7150 50  0001 C CNN
+	1    5500 7150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L falco_CHAMP:GND #SUPPLY011
+U 1 1 60176D34
+P 5000 7350
+F 0 "#SUPPLY011" H 5000 7350 45  0001 L BNN
+F 1 "GND" H 4925 7225 45  0000 L BNN
+F 2 "" H 5000 7350 60  0001 C CNN
+F 3 "" H 5000 7350 60  0001 C CNN
+	1    5000 7350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 7350 5200 7350
+Wire Wire Line
+	4500 7450 5200 7450
+Text Label 4500 7450 0    50   ~ 0
+VCC33
+NoConn ~ 5200 6950
+NoConn ~ 5200 7050
+NoConn ~ 5200 7150
+NoConn ~ 5200 7250
+$Comp
+L Connector_Generic:Conn_01x06 J12
+U 1 1 601E0B5B
+P 1550 7150
+F 0 "J12" H 1550 7450 50  0000 C CNN
+F 1 "RS232_PMOD" H 1550 6750 50  0000 C CNN
+F 2 "falco_digilent:rs232-1x6" H 1550 7150 50  0001 C CNN
+F 3 "~" H 1550 7150 50  0001 C CNN
+	1    1550 7150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Top_Bottom J14
+U 1 1 601E8F6E
+P 8250 7150
+F 0 "J14" H 8300 7450 50  0000 C CNN
+F 1 "ETH_PMOD" H 8300 6750 50  0000 C CNN
+F 2 "falco_digilent:ethernet-2x6" H 8250 7150 50  0001 C CNN
+F 3 "~" H 8250 7150 50  0001 C CNN
+	1    8250 7150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 601EA0E3
+P 7250 7200
+F 0 "R1" V 7350 7200 50  0000 C CNN
+F 1 "100k" V 7150 7200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7290 7190 50  0001 C CNN
+F 3 "~" H 7250 7200 50  0001 C CNN
+	1    7250 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 7050 7250 6950
+Wire Wire Line
+	7250 6950 7950 6950
+Wire Wire Line
+	7250 7350 7250 7450
+Wire Wire Line
+	7250 7450 7950 7450
+NoConn ~ 7950 7050
+NoConn ~ 7950 7150
+NoConn ~ 7950 7250
+Text Notes 7500 8150 0    50   ~ 0
+100k pull-up resistor is required by Microchip.\nSee ENC424J600 datasheet figure 2-9.\n\nThe module seems to work even without the\nresistor, so you can probably leave it out if\nyou prefer.
+Wire Notes Line
+	1000 5850 9500 5850
+Wire Notes Line
+	9500 5850 9500 8350
+Wire Notes Line
+	9500 8350 1000 8350
+Wire Notes Line
+	1000 8350 1000 5850
+$Comp
+L falco_CHAMP:GND #SUPPLY0102
+U 1 1 602B51F2
+P 7800 7350
+F 0 "#SUPPLY0102" H 7800 7350 45  0001 L BNN
+F 1 "GND" H 7725 7225 45  0000 L BNN
+F 2 "" H 7800 7350 60  0001 C CNN
+F 3 "" H 7800 7350 60  0001 C CNN
+	1    7800 7350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7900 7350 7950 7350
+Text Label 7350 7450 0    50   ~ 0
+VCC33
+Text Label 7800 6950 0    50   ~ 0
+INT
+$Comp
+L Connector_Generic:Conn_01x06 J1
+U 1 1 60308C0B
+P 3000 7150
+F 0 "J1" H 3000 7450 50  0000 C CNN
+F 1 "FTDI_FRIEND" H 3000 6750 50  0000 C CNN
+F 2 "falco_adafruit:ftdi-friend-1x6" H 3000 7150 50  0001 C CNN
+F 3 "~" H 3000 7150 50  0001 C CNN
+	1    3000 7150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L falco_CHAMP:GND #SUPPLY07
+U 1 1 603099B7
+P 3400 6950
+F 0 "#SUPPLY07" H 3400 6950 45  0001 L BNN
+F 1 "GND" H 3325 6825 45  0000 L BNN
+F 2 "" H 3400 6950 60  0001 C CNN
+F 3 "" H 3400 6950 60  0001 C CNN
+	1    3400 6950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3200 6950 3300 6950
+Wire Wire Line
+	3200 7350 3950 7350
+Text Label 3950 7350 2    50   ~ 0
+TX1
+Wire Wire Line
+	3950 7250 3200 7250
+Wire Wire Line
+	3950 7050 3200 7050
+Wire Wire Line
+	3950 7450 3200 7450
+Text Label 3950 7250 2    50   ~ 0
+RX1
+NoConn ~ 3200 7150
+Text Label 3950 7050 2    50   ~ 0
+RTS
+Text Label 3950 7450 2    50   ~ 0
+CTS
+Text Notes 1600 7800 0    50   ~ 0
+You can either use a Digilent RS232 PMOD or an\nAdaFruit FTDI-Friend.
+$Comp
+L Device:C C6
+U 1 1 60184414
+P 6200 7850
+F 0 "C6" H 6225 7950 50  0000 L CNN
+F 1 "10u" H 6225 7750 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 6238 7700 50  0001 C CNN
+F 3 "~" H 6200 7850 50  0001 C CNN
+	1    6200 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 60184AB7
+P 7150 7850
+F 0 "C8" H 7175 7950 50  0000 L CNN
+F 1 "10u" H 7175 7750 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 7188 7700 50  0001 C CNN
+F 3 "~" H 7150 7850 50  0001 C CNN
+	1    7150 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 601852C4
+P 5950 7850
+F 0 "C5" H 5975 7950 50  0000 L CNN
+F 1 "10u" H 5975 7750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5988 7700 50  0001 C CNN
+F 3 "~" H 5950 7850 50  0001 C CNN
+	1    5950 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 601858B3
+P 6900 7850
+F 0 "C7" H 6925 7950 50  0000 L CNN
+F 1 "10u" H 6925 7750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6938 7700 50  0001 C CNN
+F 3 "~" H 6900 7850 50  0001 C CNN
+	1    6900 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L falco_CHAMP:GND #SUPPLY?
+U 1 1 60187A9A
+P 5950 8150
+F 0 "#SUPPLY?" H 5950 8150 45  0001 L BNN
+F 1 "GND" H 5875 8025 45  0000 L BNN
+F 2 "" H 5950 8150 60  0001 C CNN
+F 3 "" H 5950 8150 60  0001 C CNN
+	1    5950 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L falco_CHAMP:GND #SUPPLY?
+U 1 1 601A3D08
+P 6200 8150
+F 0 "#SUPPLY?" H 6200 8150 45  0001 L BNN
+F 1 "GND" H 6125 8025 45  0000 L BNN
+F 2 "" H 6200 8150 60  0001 C CNN
+F 3 "" H 6200 8150 60  0001 C CNN
+	1    6200 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L falco_CHAMP:GND #SUPPLY?
+U 1 1 601A41CD
+P 6900 8150
+F 0 "#SUPPLY?" H 6900 8150 45  0001 L BNN
+F 1 "GND" H 6825 8025 45  0000 L BNN
+F 2 "" H 6900 8150 60  0001 C CNN
+F 3 "" H 6900 8150 60  0001 C CNN
+	1    6900 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L falco_CHAMP:GND #SUPPLY?
+U 1 1 601A4791
+P 7150 8150
+F 0 "#SUPPLY?" H 7150 8150 45  0001 L BNN
+F 1 "GND" H 7075 8025 45  0000 L BNN
+F 2 "" H 7150 8150 60  0001 C CNN
+F 3 "" H 7150 8150 60  0001 C CNN
+	1    7150 8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 8000 7150 8050
+Wire Wire Line
+	6900 8000 6900 8050
+Wire Wire Line
+	6200 8000 6200 8050
+Wire Wire Line
+	5950 8000 5950 8050
+Wire Wire Line
+	5950 7700 5950 7600
+Connection ~ 5950 7450
+Wire Wire Line
+	5950 7450 5700 7450
+Wire Wire Line
+	5950 7600 6200 7600
+Wire Wire Line
+	6200 7600 6200 7700
+Connection ~ 5950 7600
+Wire Wire Line
+	5950 7600 5950 7450
+Wire Wire Line
+	7150 7700 7150 7600
+Wire Wire Line
+	7150 7450 7250 7450
+Connection ~ 7250 7450
+Wire Wire Line
+	7150 7600 6900 7600
+Wire Wire Line
+	6900 7600 6900 7700
+Connection ~ 7150 7600
+Wire Wire Line
+	7150 7600 7150 7450
+$EndSCHEMATC

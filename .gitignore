@@ -1,0 +1,8 @@
+.*.sw?
+*.pdf
+*.zip
+*.bak
+*.bck
+*.csv
+*.xml
+*.kicad_pcb-bak
