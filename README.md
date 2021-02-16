@@ -1,6 +1,4 @@
 # cyc1000 pidp-11 shim
-A shim for using a PDP-2011 CYC1000 FPGA board with the PiDP-11.
-
 This shim allows a PDP-2011 CYC1000 FPGA implementation of the PDP-11 to be used with a PiDP-11 panel.
 
 The PDP2011 FPGA is described here:  https://pdp2011.sytse.net/wordpress/pdp-11/fpga-boards/cyc1000/
@@ -23,7 +21,7 @@ R1 is optional, but according to the Microchip data sheet for the ENC424J600 (se
 
 You can only install J1 (FTDI-Friend) or J12 (RS232 PMOD), not both, to avoid conflicts driving the RX1 signal.  In the photos above I installed the FTDI-Friend.
 
-I also designed a housing, suitable for 3D printing, to fit over the modules, since they are of different heights, and they extend through the back panel of the PiDP-11.  The housing assumes that you will be using an FTDI Friend rather than an RS232 PMOD.  You will find the FreeCAD design file and STL in the housing directory.  Here is a photo:
+I also designed a housing, suitable for 3D printing, to fit over the modules, since they are of different heights, and they extend through the back panel of the PiDP-11.  The housing assumes that you will be using an FTDI Friend rather than an RS232 PMOD.  I removed the female connector from the FTDI Friend, and added a right-angle header, so it could directly solder into the shim.  You will have to modify the housing if you do anything different.  You will find the FreeCAD design file and STL in the housing directory.  Here is a photo:
 
 <img src="photos/cover.jpg" >
 
