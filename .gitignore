@@ -10,3 +10,4 @@ _autosave*
 *.FCStd1
 *.3mf
 *.gcode
+*-backups
